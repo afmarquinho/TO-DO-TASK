@@ -1,0 +1,113 @@
+:root {
+  --grisFondo: rgb(242, 242, 242);
+  --morado: rgb(204, 102, 255);
+  --amarillo: rgb(255, 255, 8);
+  --aguamarina: rgb(15, 159, 193);
+  --verdemarino: rgb(15, 159, 193);
+  --fuentePrincipal: "Manrope", sans-serif;
+  --funteTitulo: 'Lobster Two', cursive;
+} 
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: var(--fuentePrincipal);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  background-color: #cee6fa80;
+  /* background: linear-gradient(
+    to right bottom,
+    rgb(43, 184, 212),
+    rgb(150, 239, 243),
+    rgb(162, 204, 242),
+    rgb(170, 163, 230),
+    rgb(248, 196, 209),
+    rgb(243, 239, 201)
+  ); */
+
+  /* background-color: rgb(242, 242, 242); */
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  margin: 0;
+}
+h1 {
+    font-family: var(--funteTitulo);
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+p{
+  margin: 0;
+  font-size:1.2rem;
+}
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* ______________________
+COMPONENTES
+______________________ */
+/* pagina layout */
+
+.link__tareas {
+  color: #e3ff66;
+  font-weight: 800;
+  font-size: 2rem;
+  display: block;
+  margin-left: 2rem;
+}
+.link__calendario {
+  color: #f0ce0b;
+  font-weight: 800;
+  font-size: 2rem;
+  display: block;
+  margin-left: 2rem;
+}
+.link__blog {
+  color: #ff66ff;
+  font-weight: 800;
+  font-size: 2rem;
+  display: block;
+  margin-left: 2rem;
+}
+@media (max-width: 768px) {
+  .link__tareas,
+  .link__calendario,
+  .link__blog{
+    margin: auto;
+    text-align: center;
+  }
+
+}
+
+
+/* PANEL */
+.button{
+  font-size: 1rem;
+  border:none;
+  padding: 0.5rem;
+}
+
+
