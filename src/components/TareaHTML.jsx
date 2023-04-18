@@ -8,6 +8,12 @@ const Contenedor = styled.div`
   display: inline-block;
   width:100%;
   margin-bottom:1rem;
+  @media (min-width: 769px) {
+    width:auto;
+    margin-right:0.5rem;
+    margin-bottom:0.5rem;
+    
+  }
 `;
 const NombreTarea = styled.p`
   text-transform: uppercase;
@@ -91,7 +97,7 @@ const TareaHTML = ({ tarea, setTareaEditar,setActivarEditar, eliminartarea}) => 
         
   };
   const handleDelete = ()=>{
-    const alerta = confirm('¿Deseas eliminar la tarea...?')
+    const alerta = confirm(`¿Deseas eliminar la tarea ${tarea.nombre}?`)
     if(alerta){
       eliminartarea(tarea.id)
     }
